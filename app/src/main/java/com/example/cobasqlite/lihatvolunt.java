@@ -21,17 +21,17 @@ public class lihatvolunt extends AppCompatActivity {
 
     private ArrayList NamaList;
     private ArrayList AlamatList;
-    private ArrayList TanggalList;
+    private ArrayList DescList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lihatvolunt);
 
-        getSupportActionBar().setTitle("List ACARA VOLUNTEER");
+        getSupportActionBar().setTitle("List Acara Volunteer");
         NamaList = new ArrayList<>();
         AlamatList = new ArrayList<>();
-        TanggalList = new ArrayList<>();
+        DescList = new ArrayList<>();
 
         Mydatabase = new db_profile(getBaseContext());
         recyclerView = findViewById(R.id.review);
@@ -40,7 +40,7 @@ public class lihatvolunt extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
-        adapter = new RecyclerViewAdapter(NamaList, AlamatList, TanggalList);
+        adapter = new RecyclerViewAdapter(NamaList, AlamatList, DescList);
         recyclerView.setAdapter(adapter);
 
     }
@@ -55,7 +55,7 @@ public class lihatvolunt extends AppCompatActivity {
             cursor.moveToPosition(count);
             NamaList.add(cursor.getString(0));
             AlamatList.add(cursor.getString(1));
-            TanggalList.add(cursor.getString(2));
+            DescList.add(cursor.getString(2));
         }
     }
 

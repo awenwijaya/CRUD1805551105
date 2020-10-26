@@ -20,9 +20,6 @@
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.cobasqlite.UpdateEvent" />
         <activity android:name="com.example.cobasqlite.lihatvolunt" />
-        <activity android:name="com.example.cobasqlite.LihatData" />
-        <activity android:name="com.example.cobasqlite.viewgmbr" />
-        <activity android:name="com.example.cobasqlite.Lihat_Profile" />
         <activity
             android:name="com.example.cobasqlite.MainActivity"
             android:label="Event Volunteer" >

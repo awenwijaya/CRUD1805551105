@@ -1796,6 +1796,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id deskripsi
 id deskripsii
 id dialog_button
 id dimensions
@@ -2033,7 +2034,6 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
-id tanggal
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -2146,7 +2146,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_lihat__profile
-layout activity_lihat_data
 layout activity_lihatvolunt
 layout activity_main
 layout activity_update_event

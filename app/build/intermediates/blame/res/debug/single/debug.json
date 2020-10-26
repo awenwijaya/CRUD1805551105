@@ -48,10 +48,6 @@
         "source": "C:\\Users\\awenh\\Desktop\\CobaSqlite\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\awenh\\Desktop\\CobaSqlite\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_lihat_data.xml.flat",
-        "source": "C:\\Users\\awenh\\Desktop\\CobaSqlite\\app\\src\\main\\res\\layout\\activity_lihat_data.xml"
-    },
-    {
         "merged": "C:\\Users\\awenh\\Desktop\\CobaSqlite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\awenh\\Desktop\\CobaSqlite\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },

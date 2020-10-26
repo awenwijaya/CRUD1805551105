@@ -14,8 +14,8 @@ import android.widget.Toast;
 public class UpdateEvent extends AppCompatActivity {
 
     private db_profile MyDatabase;
-    private EditText NewDesc, NewNama, NewTgl;
-    private String getNewDesc, getNewNama, getNewTgl;
+    private EditText NewDesc, NewNama, NewAlamat;
+    private String getNewDesc, getNewNama, getNewAlamat;
     private Button Update;
 
     @Override
@@ -24,14 +24,13 @@ public class UpdateEvent extends AppCompatActivity {
         setContentView(R.layout.activity_update_event);
         getSupportActionBar().setTitle("Masukan Data Baru");
         MyDatabase = new db_profile(getBaseContext());
-        NewDesc = findViewById(R.id.new_deskripsi);
+        NewDesc = findViewById(R.id.new_alamat);
         NewNama = findViewById(R.id.new_nama);
-        NewTgl = findViewById(R.id.new_alamat);
+        NewAlamat = findViewById(R.id.new_deskripsi);
 
-        //Menerima Data Nama dan NIM yang telah dipilih Oleh User untuk diposes
         NewNama.setText(getIntent().getExtras().getString("SendNama"));
         NewDesc.setText(getIntent().getExtras().getString("SendDesc"));
-        NewTgl.setText(getIntent().getExtras().getString("SendTanggal"));
+        NewAlamat.setText(getIntent().getExtras().getString("SendAlamat"));
 
         Update = findViewById(R.id.new_data);
         Update.setOnClickListener(new View.OnClickListener() {
@@ -47,18 +46,15 @@ public class UpdateEvent extends AppCompatActivity {
     private void setUpdateData(){
         getNewDesc = NewDesc.getText().toString();
         getNewNama = NewNama.getText().toString();
-        getNewTgl = NewTgl.getText().toString();
-
+        getNewAlamat = NewAlamat.getText().toString();
 
         SQLiteDatabase database = MyDatabase.getReadableDatabase();
 
-        //Memasukan Data baru pada 3 kolom (NIM, Nama dan Jurusan)
         ContentValues values = new ContentValues();
         values.put(db_profile.MyColumns.Nama, getNewNama);
-        values.put(db_profile.MyColumns.Alamat, getNewDesc);
-        values.put(db_profile.MyColumns.TanggalLahir, getNewTgl);
+        values.put(db_profile.MyColumns.Alamat, getNewAlamat);
+        values.put(db_profile.MyColumns.Deskripsi, getNewDesc);
 
-        //Untuk Menentukan Data/Item yang ingin diubah, berdasarkan NIM
         String selection = db_profile.MyColumns.Nama + " LIKE ?";
         String[] selectionArgs = {getNewNama};
         database.update(db_profile.MyColumns.NamaTabel, values, selection, selectionArgs);

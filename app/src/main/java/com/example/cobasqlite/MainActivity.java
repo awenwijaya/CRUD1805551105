@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -14,9 +13,9 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText nama, alamat, tgl;
+    private EditText nama, alamat, desc;
     private Button regis, liat;
-    private String setnama, setalamat, settgl;
+    private String setnama, setalamat, setdesc;
     private db_profile db_profile1;
 
     @Override
@@ -26,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         nama = findViewById(R.id.nama);
         alamat = findViewById(R.id.alamat);
-        tgl = findViewById(R.id.tanggal);
+        desc = findViewById(R.id.deskripsi);
         regis = findViewById(R.id.regis1);
         liat = findViewById(R.id.liatdata);
 
@@ -54,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     private void setData(){
         setnama = nama.getText().toString();
         setalamat = alamat.getText().toString();
-        settgl = tgl.getText().toString();
+        setdesc = desc.getText().toString();
     }
 
     private void saveData(){
@@ -62,8 +61,9 @@ public class MainActivity extends AppCompatActivity {
 
         ContentValues values = new ContentValues();
         values.put(com.example.cobasqlite.db_profile.MyColumns.Nama, setnama);
+        values.put(com.example.cobasqlite.db_profile.MyColumns.Deskripsi, setdesc);
         values.put(com.example.cobasqlite.db_profile.MyColumns.Alamat, setalamat);
-        values.put(com.example.cobasqlite.db_profile.MyColumns.TanggalLahir, settgl);
+
 
         create.insert(com.example.cobasqlite.db_profile.MyColumns.NamaTabel, null, values);
     }
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
     private void cleardata(){
         nama.setText("");
         alamat.setText("");
-        tgl.setText("");
+        desc.setText("");
     }
 
 }

@@ -11,9 +11,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".UpdateEvent"></activity>
         <activity android:name=".lihatvolunt"/>
-        <activity android:name=".LihatData" />
-        <activity android:name=".viewgmbr" />
-        <activity android:name=".Lihat_Profile" />
         <activity android:name=".MainActivity"
             android:label = "Event Volunteer">
             <intent-filter>

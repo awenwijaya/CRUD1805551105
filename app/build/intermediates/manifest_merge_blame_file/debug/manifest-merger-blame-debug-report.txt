@@ -11,7 +11,7 @@
 9-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:5:5-29:19
+11-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:5:5-26:19
 12        android:allowBackup="true"
 12-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -34,39 +34,30 @@
 22        <activity android:name="com.example.cobasqlite.lihatvolunt" />
 22-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:13:9-48
 22-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:13:19-46
-23        <activity android:name="com.example.cobasqlite.LihatData" />
-23-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:14:9-47
-23-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:14:19-44
-24        <activity android:name="com.example.cobasqlite.viewgmbr" />
-24-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:15:9-46
-24-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:15:19-43
-25        <activity android:name="com.example.cobasqlite.Lihat_Profile" />
-25-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:16:9-51
-25-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:16:19-48
-26        <activity
-26-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:17:9-24:20
-27            android:name="com.example.cobasqlite.MainActivity"
-27-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:17:19-47
-28            android:label="Event Volunteer" >
-28-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:18:13-46
-29            <intent-filter>
-29-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:19:13-23:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:20:17-69
-30-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:20:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:22:17-77
-32-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:22:27-74
-33            </intent-filter>
-34        </activity>
-35
-36        <meta-data
-36-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:26:9-28:57
-37            android:name="preloaded_fonts"
-37-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:27:13-43
-38            android:resource="@array/preloaded_fonts" />
-38-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:28:13-54
-39    </application>
-40
-41</manifest>
+23        <activity
+23-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:14:9-21:20
+24            android:name="com.example.cobasqlite.MainActivity"
+24-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:14:19-47
+25            android:label="Event Volunteer" >
+25-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:15:13-46
+26            <intent-filter>
+26-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:16:13-20:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:17:17-69
+27-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:17:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:19:17-77
+29-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:19:27-74
+30            </intent-filter>
+31        </activity>
+32
+33        <meta-data
+33-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:23:9-25:57
+34            android:name="preloaded_fonts"
+34-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:24:13-43
+35            android:resource="@array/preloaded_fonts" />
+35-->C:\Users\awenh\Desktop\CobaSqlite\app\src\main\AndroidManifest.xml:25:13-54
+36    </application>
+37
+38</manifest>
