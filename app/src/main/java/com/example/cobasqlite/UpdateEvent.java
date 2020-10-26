@@ -24,9 +24,9 @@ public class UpdateEvent extends AppCompatActivity {
         setContentView(R.layout.activity_update_event);
         getSupportActionBar().setTitle("Masukan Data Baru");
         MyDatabase = new db_profile(getBaseContext());
-        NewDesc = findViewById(R.id.new_alamat);
+        NewDesc = findViewById(R.id.new_deskripsi);
         NewNama = findViewById(R.id.new_nama);
-        NewAlamat = findViewById(R.id.new_deskripsi);
+        NewAlamat = findViewById(R.id.new_alamat);
 
         NewNama.setText(getIntent().getExtras().getString("SendNama"));
         NewDesc.setText(getIntent().getExtras().getString("SendDesc"));
