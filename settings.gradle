@@ -1,0 +1,2 @@
+rootProject.name='CobaSqlite'
+include ':app'

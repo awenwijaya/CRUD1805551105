@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".UpdateEvent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amatic_sc_bold"
+        android:text="Edit Event"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+
+    <EditText
+        android:id="@+id/new_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/assistant_bold"
+        android:hint="Nama Baru"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/new_deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/assistant_bold"
+        android:hint="Deskripsi"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/new_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/assistant_bold"
+        android:hint="Alamat Pelaksanaan"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/new_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="Simpan Data Baru" />
+</LinearLayout>
